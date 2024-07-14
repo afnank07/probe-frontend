@@ -29,7 +29,7 @@ export default function Home() {
     const handleSubmit = async (e) => {
       e.preventDefault();
       try {
-        const result = await axios.post('http://127.0.0.1:8000/analyze', {
+        const result = await axios.post('https://probe-backend-uc9u.onrender.com/analyze', {
           token: token.value,
           metrics: metrics.map(m => m.value),
           startDate,
